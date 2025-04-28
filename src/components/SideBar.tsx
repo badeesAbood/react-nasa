@@ -1,5 +1,6 @@
+import { NasaData } from "../interfaces/nasaData";
 
-export default function SideBar(porps: { handleToggleModal: () => void  , data: {explanation: string , title: string } }) {
+export default function SideBar(porps: { handleToggleModal: () => void  , data:NasaData}) {
   const { handleToggleModal , data  } = porps;
   return (
     <div className="sidebar">

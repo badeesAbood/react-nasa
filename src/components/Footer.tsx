@@ -1,6 +1,7 @@
+import { NasaData } from "../interfaces/nasaData";
 
 
-export default function Footer(props: {  handleToggleModal: () => void , data: {title: string} }) {
+export default function Footer(props: {  handleToggleModal: () => void , data: NasaData }) {
   const {handleToggleModal  , data } = props;
   return (
     <footer>

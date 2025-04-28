@@ -1,9 +1,12 @@
+import { NasaData } from "../interfaces/nasaData";
 
 
-export default function Main() {
+export default function Main(props: {data: NasaData}) {
+
+    const { data } = props;
     return (
        <div className="imgContainer">
-        <img src="mars.png" alt="mar-demo-pic" className="bgImage"/>
+        <img src={data.hdurl ? data.hdurl : "mars.png"} alt={data.title} className="bgImage"/>
        </div>
     )
     }
